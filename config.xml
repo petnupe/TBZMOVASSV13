@@ -10,30 +10,28 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="phonegap-version" value="cli-7.0.1" />
-    
-	<platform name="android">
-        <icon src="www/res/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
-		<icon src="www/res/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
-		<icon src="www/res/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
-		<icon src="www/res/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
-		<icon src="www/res/icons/android/logo144x144.png" qualifier="xxhdpi" />
-		<icon src="www/res/icons/android/logo192x192.png" qualifier="xxxhdpi" />
-		<splash src="www/res/screens/android/screen240x320.png" qualifier="port-ldpi" />
-		<splash src="www/res/screens/android/screen320x240.png" qualifier="land-ldpi" />
-		<splash src="www/res/screens/android/screen-mdpi-portrait.png" qualifier="port-mdpi" />
-		<splash src="www/res/screens/android/screen-mdpi-landscape.png" qualifier="land-mdpi" />
-		<splash src="www/res/screens/android/screen-hdpi-portrait.png" qualifier="port-hdpi" />
-		<splash src="www/res/screens/android/screen-hdpi-landscape.png" qualifier="land-hdpi" />
-		<splash src="www/res/screens/android/screen-xhdpi-portrait.png" qualifier="port-xhdpi" />
-		<splash src="www/res/screens/android/screen-xhdpi-landscape.png" qualifier="land-xhdpi" />
-		<splash src="www/res/screens/android/screen960x1600.png" qualifier="port-xxhdpi" />
-		<splash src="www/res/screens/android/screen1600x960.png" qualifier="land-xxhdpi" />
-		<splash src="www/res/screens/android/screen1280x1920.png" qualifier="port-xxxhdpi" />
-		<splash src="www/res/screens/android/screen1920x1280.png" qualifier="land-xxxhdpi" />
+    <platform name="android">
+        <icon qualifier="ldpi" src="www/res/icons/android/icon-36-ldpi.png" />
+        <icon qualifier="mdpi" src="www/res/icons/android/icon-48-mdpi.png" />
+        <icon qualifier="hdpi" src="www/res/icons/android/icon-72-hdpi.png" />
+        <icon qualifier="xhdpi" src="www/res/icons/android/icon-96-xhdpi.png" />
+        <icon qualifier="xxhdpi" src="www/res/icons/android/logo144x144.png" />
+        <icon qualifier="xxxhdpi" src="www/res/icons/android/logo192x192.png" />
+        <splash qualifier="port-ldpi" src="www/res/screens/android/screen240x320.png" />
+        <splash qualifier="land-ldpi" src="www/res/screens/android/screen320x240.png" />
+        <splash qualifier="port-mdpi" src="www/res/screens/android/screen-mdpi-portrait.png" />
+        <splash qualifier="land-mdpi" src="www/res/screens/android/screen-mdpi-landscape.png" />
+        <splash qualifier="port-hdpi" src="www/res/screens/android/screen-hdpi-portrait.png" />
+        <splash qualifier="land-hdpi" src="www/res/screens/android/screen-hdpi-landscape.png" />
+        <splash qualifier="port-xhdpi" src="www/res/screens/android/screen-xhdpi-portrait.png" />
+        <splash qualifier="land-xhdpi" src="www/res/screens/android/screen-xhdpi-landscape.png" />
+        <splash qualifier="port-xxhdpi" src="www/res/screens/android/screen960x1600.png" />
+        <splash qualifier="land-xxhdpi" src="www/res/screens/android/screen1600x960.png" />
+        <splash qualifier="port-xxxhdpi" src="www/res/screens/android/screen1280x1920.png" />
+        <splash qualifier="land-xxxhdpi" src="www/res/screens/android/screen1920x1280.png" />
     </platform>
-
     <platform name="ios">
-    	<icon height="29" platform="ios" src="www/res/icons/ios/icon-Small.png" width="29" />
+        <icon height="29" platform="ios" src="www/res/icons/ios/icon-Small.png" width="29" />
         <icon height="40" platform="ios" src="www/res/icons/ios/icon-Small-40.png" width="40" />
         <icon height="50" platform="ios" src="www/res/icons/ios/icon-Small-50.png" width="50" />
         <icon height="57" platform="ios" src="www/res/icons/ios/icon.png" width="57" />
@@ -69,18 +67,16 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    
-	<platform name="android">
+    <platform name="android">
         <resource-file src="./google-services.json" target="./google-services.json" />
         <allow-intent href="market:*" />
     </platform>
-    
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="ios" spec="~4.5.4" />
     <plugin name="cordova-plugin-dialogs" spec="1.3.4" />
     <plugin name="cordova-plugin-network-information" spec="1.3.4" />
     <plugin name="cordova-plugin-fcm" spec="2.1.2" />
+    <engine name="ios" spec="~4.5.4" />
 </widget>
