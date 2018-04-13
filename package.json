@@ -1,1 +1,21 @@
-{"name":"com.tecbiz.tecbizassociado","version":"314","displayName":"TecBiz Associado","cordova":{"platforms":["ios"]},"dependencies":{"cordova-ios":"~4.5.4"}}
+{
+  "name": "com.tecbiz.tecbizassociado",
+  "version": "314",
+  "displayName": "TecBiz Associado",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-fcm": {}
+    }
+  },
+  "dependencies": {
+    "cordova-ios": "~4.5.4",
+    "cordova-plugin-dialogs": "1.3.4",
+    "cordova-plugin-network-information": "1.3.4",
+    "cordova-plugin-fcm": "2.1.2"
+  }
+}
