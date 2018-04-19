@@ -1,3 +1,4 @@
+
 var app = {
     initialize: function() {
         this.bindEvents();
@@ -9,6 +10,17 @@ var app = {
 
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
+        FCMPlugin.onTokenRefresh(function(token){
+            alert('Token Refresh' + token );
+            document.write(token);
+        });
+
+        FCMPlugin.getToken(function(token){
+            alert('getToken ->' + token);
+            document.write('getToken => ' + token);
+        });
+        
     },
 
     receivedEvent: function(id) {
@@ -17,6 +29,6 @@ var app = {
         var receivedElement = parentElement.querySelector('.received');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        console.log('Received Event: ' + id);
     }
 };
-console.log('Received Event: ');
