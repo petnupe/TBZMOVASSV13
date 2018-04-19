@@ -51,6 +51,6 @@
     <splash density="port-xxxhdpi" src="www/res/screens/android/drawable-port-xxxhdpi-screen.png" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="phonegap-version" value="cli-7.0.1" />
 </widget>
