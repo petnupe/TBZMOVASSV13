@@ -20,7 +20,6 @@ var app = {
             alert('getToken ->' + token);
             document.write('getToken => ' + token);
         });
-        
     },
 
     receivedEvent: function(id) {
