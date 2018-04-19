@@ -13,7 +13,6 @@ var app = {
         
         FCMPlugin.onTokenRefresh(function(token){
             alert('Token Refresh' + token );
-
             document.write(token);
         });
 
